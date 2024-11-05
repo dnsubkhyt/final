@@ -3,7 +3,7 @@ This is a simple, interactive web app built using HTML, CSS, and JavaScript. It 
 
 Live Demo
 You can view the live version of the app by clicking the link below:
-[https://dnsubkhyt.github.io/final/]
+(https://dnsubkhyt.github.io/final/)
 
 Features
 1. User Authentication
@@ -42,6 +42,7 @@ Clone the repository to your local machine:
 bash
 Copy code
 git clone https://github.com/dnsubkhyt/final.git
+
 Open the project folder and double-click index.html to view the app in your browser.
 
 Contributing
