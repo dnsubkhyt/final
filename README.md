@@ -3,8 +3,7 @@ This is a simple, interactive web app built using HTML, CSS, and JavaScript. It 
 
 Live Demo
 You can view the live version of the app by clicking the link below:
-
-Interactive Web App
+[https://dnsubkhyt.github.io/final/]
 
 Features
 1. User Authentication
