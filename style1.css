@@ -1,0 +1,276 @@
+/* Basic Styling */
+body {
+    background-color: #f8f9fa; /* Light background color */
+    color: #333; /* Text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Consistent font */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #343a40; /* Dark background for the header */
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00d1b2; /* Accent color on hover */
+}
+
+.navbar-toggler {
+    border-color: #00d1b2; /* Hamburger menu button color */
+}
+
+.navbar-toggler-icon {
+    background-color: #00d1b2; /* Icon color */
+}
+
+/* About Section */
+#about {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+#about h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Theme Button */
+#themeToggle {
+    margin-top: 20px;
+    background-color: #00d1b2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#themeToggle:hover {
+    background-color: #00b89f;
+}
+
+/* Gallery Section */
+#gallery {
+    padding: 50px 0;
+    background-color: #f1f1f1;
+}
+
+#gallery h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#displayImage {
+    max-width: 80%;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+/* Filter Input */
+#filterInput {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+#contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+form .form-label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+form input, form textarea {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+form button {
+    background-color: #00d1b2;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00b89f;
+}
+
+#showTime {
+    margin-top: 20px;
+    background-color: #00d1b2;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#showTime:hover {
+    background-color: #00b89f;
+}
+
+#currentTime {
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #343a40; /* Dark footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #00d1b2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Night Mode Footer */
+.night footer {
+    background-color: #444;
+    color: #f0f0f0;
+}
+
+.night footer a {
+    color: #00b89f;
+}
+
+/* Day/Night theme styles */
+.night {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+.night #themeToggle {
+    background-color: #444;
+    color: #fff;
+}
+
+.night #themeToggle:hover {
+    background-color: #555;
+}
+
+.night #displayImage {
+    border-radius: 10px;
+    filter: brightness(0.8);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    #filterInput {
+        width: 80%;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    #displayImage {
+        max-width: 100%;
+    }
+
+    .thumbnail {
+        width: 120px;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+
+    form .form-label,
+    form input,
+    form textarea {
+        font-size: 1rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+
+    #themeToggle, #showTime {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
